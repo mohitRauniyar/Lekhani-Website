@@ -10,7 +10,7 @@ export default function Header() {
   return (
     <Navbar className='border-b-2'>
         <Link to='/' className='self-center whitespace-nowrap text-xl font-semibold dark:text-white'>
-            <span className='px-2 py-1 bg-gradient-to-r from-indigo-950 via-purple-500 to-pink-600 text-white rounded-md'>Lekhani</span>
+            <span className='px-2 py-1 bg-indigo-950 text-white rounded-md'>Lekhani</span>
             <span className=' font-semibold px-5'>X</span>
             <span className='px-2 py-1 bg-pink-600 text-white rounded-md'>Amrita</span>
         </Link>
@@ -24,7 +24,7 @@ export default function Header() {
             <Button className='w-15 h-10 hidden sm:inline' color='gray' pill>
                 <FaMoon />
             </Button>
-            <Link to='/sign-in'>
+            <Link to='/signin'>
                 <Button gradientDuoTone='purpleToBlue' outline> Sign In</Button>
             </Link>
             <Navbar.Toggle/>
