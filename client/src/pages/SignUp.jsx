@@ -22,7 +22,7 @@ export default function SignUp() {
             </div>
             <div>
               <Label value='Your email'/>
-              <TextInput type='text' placeholder='Email' id='email'/> 
+              <TextInput type='text' placeholder='name@company.com' id='email'/> 
             </div>
             <div>
               <Label value='Your password'/>
@@ -30,6 +30,11 @@ export default function SignUp() {
             </div>
             <Button type='submit' className='bg-indigo-950' gradientDuoTone='purpleToPink'>Sign Up</Button>
           </form>
+
+          <div className="flex gap-2 text-sm mt-5">
+            <span>Have an account</span>
+            <Link to='/signin' className='text-blue-500'>Sign In</Link>
+          </div>
         </div>
       </div>
     </div>
