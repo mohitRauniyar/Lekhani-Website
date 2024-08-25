@@ -154,7 +154,7 @@ export default function DashProfile() {
         
         <TextInput type='text' id='username' placehplder='username' defaultValue={currentUser.username}onChange={handleChange}/>
         <TextInput type='email' id='email' placehplder='email' defaultValue={currentUser.email}onChange={handleChange}/>
-        <TextInput type='password' id='password' placehplder='password' onChange={handleChange}/>
+        <TextInput type='password' id='password' placeholder='password' onChange={handleChange}/>
         <Button type='submit' gradientDuoTone='purpleToPink' outline>Update</Button>
       </form>
       <div className="text-red-500 flex justify-between my-5">
