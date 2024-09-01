@@ -5,6 +5,7 @@ import cookieParser from 'cookie-parser'
 
 import userRoutes from './routes/user.route.js'
 import authRoute from './routes/auth.route.js'
+import postRoute from './routes/post.route.js'
 
 dotenv.config()
 
@@ -28,6 +29,7 @@ app.listen(9000, ()=>{
 
 app.use('/api/user', userRoutes)
 app.use('/api/auth', authRoute)
+app.use('/api/post', postRoute)
 
 
 app.use((err, req, res, next)=>{
